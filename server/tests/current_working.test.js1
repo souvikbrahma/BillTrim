@@ -1,0 +1,36 @@
+const app = require("../app");
+const testConfig = require("../configs/testConfig");
+const userGroup = require("./mockDB/userGroup");
+const user = require("./mockDB/user");
+const statusHandler = require("../handlers/statusHandler");
+const PORT_TO_TEST = 4001;
+const apiController = new(require("./apiController"))(PORT_TO_TEST);
+
+
+beforeAll(async () => {
+    // START THE TEST SERVER
+    testConfig.WEBSERVER_PORT = PORT_TO_TEST;
+    await app.start(testConfig);
+});
+
+describe("Read User", () => {
+    beforeEach(async () => {
+        // delete all userGroups from DB
+        await userGroup.removeAll();
+
+        // delete all users from DB
+        await user.removeAll();
+    });
+
+    
+
+
+
+
+
+})
+
+afterAll(async () => {
+    // STOP THE TEST SERVER
+    await app.stop();
+});

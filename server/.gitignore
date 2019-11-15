@@ -1,0 +1,9 @@
+node_modules
+configFilesStore/*
+files/exports/media/*
+files/exports/documents/*
+files/exports/zips/*
+files/imports/media/*.png
+files/imports/media/userQrCode/*.png
+files/imports/media/user/*.jpg
+files/imports/documents/*
