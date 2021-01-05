@@ -42,7 +42,7 @@
     "xlsx": "^0.14.1"
   },
   "devDependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "jest": "^24.1.0"
   }
 }
